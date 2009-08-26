@@ -12,7 +12,8 @@ well as editing it offline.
 
 Requirements
 ============
-* PHP > 5.0
+* PHP >= 5.3.0, PECL fileinfo >= 0.1.0
+* The `libmagic library <http://www.darwinsys.com/file/>`_ (or, `as a package <http://packages.debian.org/unstable/libdevel/libmagic-dev>`_)
 * A server with mod_rewrite or another URL-rewriting mechanism
 * A database with a `PDO driver <http://php.net/manual/en/pdo.drivers.php>`_ if you want user authentication
 
