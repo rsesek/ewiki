@@ -57,7 +57,7 @@ final class Config
     const TREE_VIEW_SORT = 'strnatcmp';
 
     // Path to mime.cache
-    const MIME_CACHE_PATH = '/usr/share/mime/mime.cache';
+    const MIME_CACHE_PATH = '/usr/local/share/misc/magic.mgc';
 }
 
 ?>
