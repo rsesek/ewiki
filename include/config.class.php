@@ -44,6 +44,12 @@ final class Config
     // Whether the website requires authentication to view pages
     const REQUIRE_LOGIN = Config::AUTHENTICATION;
 
+    // Default user's name (only takes affect if there is no authentication)
+    const DEFAULT_USER_NAME = 'Anonymous';
+
+    // Default user's email
+    const DEFAULT_USER_EMAIL = 'anonymous@localhost';
+
     /*
      * The DSN of the database to use.
      * Only used if Config::AUTHENTICATION is true

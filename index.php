@@ -533,8 +533,8 @@ else if ($special === NULL) // page-related {{{1
                 }
                 else
                 {
-                    $stamp->name = $_SERVER['REMOTE_ADDR'];
-                    $stamp->email = sprintf('anonymous@%s', $_SERVER['REMOTE_ADDR']);
+                    $stamp->name = Config::DEFAULT_USER_NAME;
+                    $stamp->email = Config::DEFAULT_USER_EMAIL;
                 }
                 $stamp->time = time();
                 $stamp->offset = idate('Z', $stamp->time);
