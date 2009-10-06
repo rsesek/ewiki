@@ -84,6 +84,10 @@ abstract class eMarkup
                 return $this->error('Syntax error: '.$in);
             return $this->fmt_image($m[1], empty($m[2]) ? NULL : intval($m[2]), empty($m[3]) ? NULL : intval($m[3]));
         }
+        else if ($special == 'code')
+        {
+            return $this->fmt_code($args);
+        }
         else
             return $this->error('Unknown special: '.$in);
     }
