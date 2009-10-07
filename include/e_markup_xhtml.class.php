@@ -66,7 +66,7 @@ class eMarkupXHTML extends eMarkup
         $lines = explode("\n", $s);
         $s = '<table class="listing">';
         foreach ($lines as $i => $line)
-            $s .= sprintf('<tr><th>%d</th><td>%s</td></tr>', $i+1, $line);
+            $s .= sprintf('<tr><th>%d</th><td><pre>%s</pre></td></tr>', $i+1, $line);
         $s .= '</table>';
         return $s;
     }

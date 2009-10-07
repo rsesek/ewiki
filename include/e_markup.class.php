@@ -277,7 +277,6 @@ abstract class eMarkup
         }
 
         $lines = explode("\n", $in);
-        $lines = array_map('trim', $lines);
         $lines = array_filter($lines, array('eMarkup', 'comment_filter'));
 
         $blocks = array();
